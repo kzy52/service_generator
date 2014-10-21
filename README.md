@@ -7,7 +7,7 @@ ServiceGenerator can generate a class of service
 Add this line to your application's Gemfile:
 
 ```
-gem 'service_generator', github: rawhide/service_generator
+gem 'service_generator', github: 'rawhide/service_generator'
 ```
 
 And then execute:
