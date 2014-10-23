@@ -8,7 +8,7 @@ module Rails
       end
 
       def generate_service_spec
-        template 'service_spec.rb.erb', "spec/services/#{file_name}_service_spec.rb"
+        template 'service_spec.rb.erb', File.join('spec/services', class_path, "#{file_name}_service_spec.rb")
       end
     end
   end
