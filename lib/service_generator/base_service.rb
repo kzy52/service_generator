@@ -37,8 +37,19 @@ class BaseService
     ServiceResponse.new self
   end
 
+  #
+  # Set authenticated user object
+  #
   def authorized_by(user)
     @current_user = user
+    self
+  end
+
+  #
+  # Set other options
+  #
+  def with_options(options={})
+    @options = options
     self
   end
 end

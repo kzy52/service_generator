@@ -43,7 +43,7 @@ class ExampleService < BaseService
 end
 
 
-result = ExampleService.new(params).authorized_by(current_user).invoke
+result = ExampleService.new(params).authorized_by(current_user).with_options(token: 'abc').invoke
 if result.success?
   something...
 else
